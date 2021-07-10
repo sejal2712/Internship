@@ -1,0 +1,42 @@
+<center><u>hello</u><br>
+<u>assignment 1 of adding marks of 5 subjects and calculating percentage</u></center><br>
+
+sub1<input id=t1 /> <br>
+sub2<input id=t2 /> <br>
+sub3<input id=t3 /> <br>
+sub4<input id=t4 /> <br>
+sub5<input id=t5 /> <br>
+
+total marks<br>
+<input type=button value=+ onclick="xyz()" /> <br>
+ <output id=out1 /> <br>
+
+
+percentage<br>
+<input type=button value=% onclick="pqr()" /> <br>
+ <output id=out2 /> 
+
+<script>
+ function xyz()
+ {
+ a=parseInt(t1.value);
+ b=parseInt(t2.value);
+ c=parseInt(t3.value);
+ d=parseInt(t4.value);
+ e=parseInt(t5.value);
+ add=a+b+c+d+e;
+ out1.value='Add : ' +add
+}
+ 
+ function pqr()
+{
+ a=parseInt(t1.value);
+ b=parseInt(t2.value);
+ c=parseInt(t3.value);
+ d=parseInt(t4.value);
+ e=parseInt(t5.value);
+ percentage= (a+b+c+d+e)/5;
+ out2.value='percentage : ' +percentage
+}
+ </script>
+
