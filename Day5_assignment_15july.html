@@ -1,0 +1,55 @@
+<html>
+<head>
+
+<br>
+<center>
+<table border=0 >
+<tr><th colspan="2" style=font-size:35;color:red> Registration Form </th> </tr><br>
+<tr> <td> User Id </td> <td> <input required pattern="[0-9a-z ]{6}" id=userid > </td> </tr>
+<tr> <td> Name</td>  <td> <input required pattern="[A-Za-z ]{2,40}" id=name > </td> </tr> 
+<tr> <td> Password </td> <td> <input type=password required pattern="[0-9a-zA-Z]{8,16}" placeholder="atleast 8 characters" id=pass > </td> </tr>
+<tr> <td> Email Id </td> <td> <input required type=email placeholder="like abc@xyz.com" id=email > </td> </tr>
+<tr> <td> Contact </td> <td> <input required pattern="[0-9]{10}" placeholder="10 digits" id=contact > </td> </tr> 
+<tr> <td> Address </td> <td> <input required type=textarea id=address > </td> </tr>
+<tr> <td> Date of Birth </td> <td> <input type=date id=dob> </td> </tr> 
+<tr> <td> Country</td>  <td> 
+<select id=country >
+<option> India </option>
+<option> Australia </option>
+<option> China </option>
+<option> Germany </option>
+<option> France </option>
+</select></td> 
+<tr> <td> </td> <td> <input type=button value=Register onclick=show() > </td> </tr>
+</table>
+
+<p id=p1> </p>
+<script>
+function show()
+{
+a=userid.value
+b=name.value
+c=pass.value
+d=email.value
+e=contact.value
+f=address.value
+g=dob.value
+h=country.value
+out="<table border=3>"
+out+="<tr><th>User Id <td>"+a
+out+="<tr><th>Name <td>"+b
+out+="<tr><th>Password <td>"+c
+out+="<tr><th>Email Id <td>"+d
+out+="<tr><th>Contact <td>"+e
+out+="<tr><th>Address <td>"+f
+out+="<tr><th>Date of Birth <td>"+g
+out+="<tr><th>Country <td>"+h
+
+p1.innerHTML=out
+
+}
+</script>
+
+<center>
+</head>
+</html>
